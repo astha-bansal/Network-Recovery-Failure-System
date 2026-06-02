@@ -44,15 +44,27 @@ This project was developed as part of an internship task focused on building rel
 
 ### Network Recovery Module
 
-> **To be completed by Team Member 2**
+Implemented Features
 
-#### Planned Features
+Connection Monitoring
+- Detects network connectivity status.
+- Identifies network failures and connection interruptions.
 
-* Connection monitoring
-* Automatic reconnection
-* Retry workflows
-* Exponential backoff
-* Recovery logging
+Automatic Reconnection
+- Attempts to restore connectivity after network failure.
+- Supports configurable reconnection attempts.
+
+Retry Workflows
+- Retries failed operations automatically.
+- Prevents immediate failure of transient network issues.
+
+Exponential Backoff
+- Increases retry delay exponentially after each failed attempt.
+- Reduces unnecessary network load during outages.
+
+Recovery Logging
+- Logs network failures, retry attempts, and recovery events.
+- Helps in debugging and monitoring recovery operations.
 
 ---
 
