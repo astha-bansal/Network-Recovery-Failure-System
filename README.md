@@ -203,33 +203,32 @@ Responsible for:
 
 # Network Recovery Module
 
-> **Section Reserved for Team Member 2**
 
 ## Components
 
-### Connection Monitor
+## Connection Monitor
 
 Description:
 
-*Add implementation details here.*
+Monitors network connectivity and detects connection failures using connectivity checks. Provides status information to the recovery system for initiating recovery actions.
 
-### Retry Manager
-
-Description:
-
-*Add implementation details here.*
-
-### Reconnect Manager
+## Retry Manager
 
 Description:
 
-*Add implementation details here.*
+Handles retry workflows for failed operations. Supports configurable retry attempts and exponential backoff to avoid excessive retry requests during network outages.
 
-### Recovery Logger
+## Reconnect Manager
 
 Description:
 
-*Add implementation details here.*
+Manages automatic reconnection attempts after a network failure. Works with the Connection Monitor to restore connectivity and resume interrupted operations.
+
+## Recovery Logger
+
+Description:
+
+Records network failures, retry attempts, reconnection events, and recovery actions. Logging information helps with debugging, monitoring, and auditing recovery behavior.
 
 ---
 
@@ -255,7 +254,7 @@ Resume Session
 
 ## Network Recovery Flow
 
-> **To be completed by Team Member 2**
+## Network Recovery Flow
 
 ```text
 Connection Active
@@ -267,12 +266,17 @@ Network Failure
 Detect Failure
       │
       ▼
+Retry with Exponential Backoff
+      │
+      ▼
 Reconnect
+      │
+      ▼
+Log Recovery
       │
       ▼
 Resume Session
 ```
-
 ---
 
 # Usage Examples
@@ -458,16 +462,22 @@ Module     Module
 
 ### Implementation Details
 
-*Add implementation details here.*
+* Implemented Connection Monitor for network status detection.
+* Implemented Retry Manager with exponential backoff strategy.
+* Implemented Reconnect Manager for automatic reconnection.
+* Implemented Recovery Logger for failure and recovery tracking.
+* Added unit tests for all network recovery components.
 
 ### Challenges Faced
 
-*Add challenges and solutions here.*
+* Handling transient network failures without excessive retries.
+* Designing a simple exponential backoff strategy.
+* Ensuring recovery components integrate with session recovery logic.
 
 ### Screenshots / Results
 
-*Add screenshots here.*
-
+* All unit tests executed successfully.
+* Test Result: 12 passed.
 ---
 
 # License
