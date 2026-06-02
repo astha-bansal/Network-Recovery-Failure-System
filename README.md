@@ -254,7 +254,6 @@ Resume Session
 
 ## Network Recovery Flow
 
-## Network Recovery Flow
 
 ```text
 Connection Active
