@@ -1,0 +1,5 @@
+SESSION_DIRECTORY = "sessions"
+
+DEFAULT_STATUS = "active"
+
+MAX_PARTIAL_CHUNKS = 1000
