@@ -7,3 +7,6 @@ sessions/*.json
 venv/
 .venv/
 .vscode/
+
+logs/
+sessions/
