@@ -44,7 +44,7 @@ This project was developed as part of an internship task focused on building rel
 
 ### Network Recovery Module
 
->Implemented Features
+Implemented Features
 
 Connection Monitoring
 - Detects network connectivity status.
